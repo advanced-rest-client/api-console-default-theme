@@ -1,7 +1,7 @@
 {
   "name": "@api-components/api-console-default-theme",
   "description": "A default theme definition for API console",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "Apache-2.0",
   "main": "api-console-default-theme.html",
   "authors": [
