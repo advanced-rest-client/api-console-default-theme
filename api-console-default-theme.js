@@ -1,4 +1,4 @@
-<!--
+/**
 @license
 Copyright 2018 The Advanced REST client authors <arc@mulesoft.com>
 Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -10,18 +10,20 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
--->
-<link rel="import" href="../polymer/lib/elements/custom-style.html">
-<link rel="import" href="../shadycss/apply-shim.html">
-<link rel="import" href="../polymer/lib/elements/custom-style.html">
-<link rel="import" href="../paper-styles/typography.html">
-<link rel="import" href="../paper-styles/default-theme.html">
-<!--
+*/
+/*
 The API Console main stylesheet.
 It is a Polymer's custom style element. It will propagate variables and mixins
 to all elements.
--->
-<custom-style>
+*/
+import '@polymer/polymer/lib/elements/custom-style.js';
+import '@webcomponents/shadycss/entrypoints/apply-shim.js';
+import '@polymer/polymer/lib/elements/custom-style.js';
+import '@polymer/paper-styles/typography.js';
+import '@polymer/paper-styles/default-theme.js';
+const $_documentContainer = document.createElement('template');
+
+$_documentContainer.innerHTML = `<custom-style>
   <style is="custom-style">
   html {
     --primary-color: var(--arc-color-primary, #00709a);
@@ -307,4 +309,6 @@ to all elements.
     --api-console-main-content-margin-top: 12px;
   }
   </style>
-</custom-style>
+</custom-style>`;
+
+document.head.appendChild($_documentContainer.content);
