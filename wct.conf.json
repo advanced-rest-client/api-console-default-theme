@@ -3,7 +3,10 @@
   "plugins": {
     "local": {
       "disabled": true,
-      "browsers": ["chrome", "firefox"]
+      "browsers": [
+        "chrome",
+        "firefox"
+      ]
     }
   }
 }
