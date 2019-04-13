@@ -16,11 +16,11 @@ The API Console main stylesheet.
 It is a Polymer's custom style element. It will propagate variables and mixins
 to all elements.
 */
-import '@polymer/polymer/lib/elements/custom-style.js';
-import '@webcomponents/shadycss/entrypoints/apply-shim.js';
-import '@polymer/polymer/lib/elements/custom-style.js';
-import '@polymer/paper-styles/typography.js';
-import '@polymer/paper-styles/default-theme.js';
+import '../../@polymer/polymer/lib/elements/custom-style.js';
+import '../../@webcomponents/shadycss/entrypoints/apply-shim.js';
+import '../../@polymer/polymer/lib/elements/custom-style.js';
+import '../../@polymer/paper-styles/typography.js';
+import '../../@polymer/paper-styles/default-theme.js';
 const $_documentContainer = document.createElement('template');
 
 $_documentContainer.innerHTML = `<custom-style>
